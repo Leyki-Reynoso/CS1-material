@@ -1,0 +1,39 @@
+/* ============================================================
+   Hover-image trigger + popup, matched to Material's link
+   highlight behavior. Trigger text turns the accent color on
+   hover, exactly like site links. Follows your palette and
+   light/dark mode automatically.
+   ============================================================ */
+
+/* Trigger text: styled and highlighted like a Material link */
+.img-hover {
+  position: relative;
+  cursor: pointer;
+  color: var(--md-typeset-a-color);          /* same as normal links */
+  transition: color 125ms;
+}
+
+/* Hover highlight: accent color, same as link hover on the site */
+.img-hover:hover {
+  color: var(--md-accent-fg-color);
+}
+
+/* Popup image */
+.img-hover img {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-left: .4rem;
+  z-index: 10;
+  max-width: 300px;
+  padding: .4rem;
+  border-radius: .1rem;
+  background-color: var(--md-default-bg-color);
+  box-shadow: var(--md-shadow-z2);
+}
+
+
+.img-hover:hover img {
+  display: block;
+}

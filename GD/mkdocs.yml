@@ -1,5 +1,9 @@
-site_name: 2026-2027 documentation.
+site_name: Game Design Projects
 site_url: https://sitename.example
+
+nav:
+  - Home: index.md
+  - Project 1: "Project 1.md"
 theme:
   name: material
   font:
@@ -13,8 +17,8 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Dark mode
-      primary: green
-      accent: deep purple
+      primary: red
+      accent: orange
 
     # Light Mode
     - scheme: default
@@ -29,3 +33,14 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_javascript:
+  - /js/scratchblocks.min.js
+  - /js/scratchblocks-init.js
+
+extra_css:
+  - css/custom.css
+
+plugins:
+  - search
+  - macros

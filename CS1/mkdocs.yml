@@ -1,0 +1,46 @@
+site_name: Computer Science Projects
+site_url: https://sitename.example
+
+nav:
+  - Home: index.md
+  - Project 1: "Projects/Project 1.md"
+theme:
+  name: material
+  font:
+    text: Merriweather Sans
+    code: Fira Code
+  icon: 
+    logo: fontawesome/solid/computer
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: red
+      accent: orange
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: indigo
+      accent: deep orange
+      
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_javascript:
+  - /js/scratchblocks.min.js
+  - /js/scratchblocks-init.js
+
+extra_css:
+  - css/custom.css
+
+plugins:
+  - search
+  - macros
