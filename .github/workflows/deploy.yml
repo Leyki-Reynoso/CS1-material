@@ -2,7 +2,7 @@ name: Deploy class sites
 
 on:
   push:
-    branches: [gh-pages]
+    branches: [main]
 
 permissions:
   contents: read
