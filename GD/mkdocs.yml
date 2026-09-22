@@ -46,4 +46,4 @@ extra_css:
 
 plugins:
   - search
-  - macros
+  #- macros
