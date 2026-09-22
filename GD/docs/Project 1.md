@@ -23,7 +23,7 @@ Swap "Sprite1" for your player sprite's real name. -->
 
 Before you start, make two variables from the Variables category: **score** and **Lives**. In any block that says `Sprite1`, use the name of your player sprite instead.
 
-![Making a new variable in Scratch](/assets/make_variable.png)
+![Making a new variable in Scratch](assets/make_variable.png)
 
 ---
 
