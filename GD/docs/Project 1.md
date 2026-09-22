@@ -1,6 +1,6 @@
 # Coin collector game
 
-For our first program we will make a game in Scratch where your character collects coins to earn points and dodges enemies to avoid losing health. This project is an introduction to programming, and along the way I will show examples of how some of these tools would look in Java.
+For our first program we will make a game in Scratch where your character collects coins to earn points and dodges enemies to avoid losing health. 
 
 !!! note "Stuck? Try this first"
     Getting stuck is part of coding. Before you raise your hand, run through these:
@@ -18,7 +18,6 @@ Syntax rules for this site's renderer:
 - always put a space inside the angle brackets: < ... >
 - command menus stay square, e.g. go to [random position v]
 - no trailing "end" on the last line of a block
-Each part shows the answer, then a Challenge with no answer.
 Swap "Sprite1" for your player sprite's real name. -->
 
 Before you start, make two variables from the Variables category: **score** and **Lives**. In any block that says `Sprite1`, use the name of your player sprite instead.
@@ -42,9 +41,6 @@ end
 !!! check "Does it work?"
     The cat slides right while you hold the right arrow. If not, make sure `change x by` is inside the `if`, and the `if` is inside `forever`.
 
-!!! question "Challenge"
-    Make the cat move right twice as fast.
-
 ---
 
 ## Part 2: Moving left and right
@@ -64,9 +60,6 @@ end
 
 !!! check "Does it work?"
     The cat moves both ways. If left does nothing, check that the left key uses `change x by (-10)`.
-
-!!! question "Challenge"
-    Make the cat move left slower than it moves right.
 
 ---
 
@@ -94,9 +87,6 @@ end
 !!! check "Does it work?"
     All four arrows move the cat. If one direction fails, remember x is left and right, y is up and down.
 
-!!! question "Challenge"
-    Make the cat move with w, a, s, d as well: up with w, down with s, left with a, right with d.
-
 ---
 
 ## Part 4: Make clones of the enemy
@@ -123,9 +113,6 @@ go to [random position v]
 !!! check "Does it work?"
     New enemies keep appearing around the stage. If you see none, make sure the clone script has `show`, because clones start hidden.
 
-!!! question "Challenge"
-    Hide the original enemy so only the clones show.
-
 ---
 
 ## Part 5: Make the clones follow you
@@ -144,9 +131,6 @@ move (4) steps
 !!! check "Does it work?"
     Every enemy turns and moves toward you. If they sit still, check that `point towards` is inside the `forever` loop.
 
-!!! question "Challenge"
-    Slow the chase down so the enemies move at 2 steps.
-
 ---
 
 ## Part 6: Make the enemies appear every 0.5 seconds
@@ -162,9 +146,6 @@ wait (0.5) seconds
 
 !!! check "Does it work?"
     Enemies now pour in quickly. If the pace did not change, make sure you edited the `wait` block instead of adding a second one.
-
-!!! question "Challenge"
-    Find the wait time that feels fair to play, then set it there.
 
 ---
 
@@ -198,9 +179,6 @@ end
 !!! check "Does it work?"
     Score goes up by 1 each time you touch a coin. If it does not, check the coin is `touching` your player sprite's name.
 
-!!! question "Challenge"
-    Add a golden coin that is worth 5 points.
-
 ---
 
 ## Part 8: Make a health system
@@ -232,9 +210,6 @@ end
 !!! check "Does it work?"
     Lives drop by 5 each time an enemy reaches you. If Lives never change, make sure you set Lives to 10 at the start.
 
-!!! question "Challenge"
-    Make touching a coin heal 1 life.
-
 ---
 
 ## Part 9: Make a game over screen
@@ -254,5 +229,18 @@ end
 !!! check "Does it work?"
     The Game Over sign appears at 0 Lives and the game freezes. If it shows at the start, make sure the sprite `hide`s first.
 
-!!! question "Challenge"
-    Add a You Win screen when the score reaches 20.
+---
+
+## Assignments
+
+Finish these once your game is working. Each one builds on the part it names.
+
+1. **Part 1:** Make the cat move right twice as fast.
+2. **Part 2:** Make the cat move left slower than it moves right.
+3. **Part 3:** Make the cat move with w, a, s, d as well: up with w, down with s, left with a, right with d.
+4. **Part 4:** Hide the original enemy so only the clones show.
+5. **Part 5:** Slow the chase down so the enemies move at 2 steps.
+6. **Part 6:** Find the wait time for enemies to appear that feels fair to play, then set it there.
+7. **Part 7:** Add a golden coin that is worth 5 points.
+8. **Part 8:** Make touching a coin heal 1 life.
+9. **Part 9:** Add a You Win screen when the score reaches 20.
