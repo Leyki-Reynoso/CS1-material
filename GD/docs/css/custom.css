@@ -37,3 +37,6 @@
 .img-hover:hover img {
   display: block;
 }
+.md-typeset h1 { color: #c79bff; }  /* light violet, sibling of the header */
+.md-typeset h2 { color: #4fc3d7; }  /* teal, cool bridge */
+.md-typeset h3 { color: #ffc823; }  /* gold, complements the purple, loud title */

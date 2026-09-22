@@ -37,3 +37,8 @@
 .img-hover:hover img {
   display: block;
 }
+
+
+.md-typeset h1 { color: #e53935; }  /* big page titles */
+.md-typeset h2 { color: #2e7d32; }  /* section headings */
+.md-typeset h3 { color: #1565c0; }  /* sub-sections */
