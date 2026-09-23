@@ -18,18 +18,28 @@ Syntax rules for this site's renderer:
 - always put a space inside the angle brackets: < ... >
 - command menus stay square, e.g. go to [random position v]
 - no trailing "end" on the last line of a block
+The colored pill above each block says WHICH sprite the code goes on.
 Swap "Sprite1" for your player sprite's real name. -->
 
 Before you start, make two variables from the Variables category: **score** and **Lives**. In any block that says `Sprite1`, use the name of your player sprite instead.
+
+The colored tag above each block tells you which sprite to put that code on. Always check the tag first.
 
 ![Making a new variable in Scratch](assets/make_variable.png)
 
 ---
 
+!!! note "How do I know where to put the blocks?"
+    The colored tag above each block tells you which sprite to put that code on. Always check the tag first. The tags are shown bellow:
+    <span style="display:inline-block; background:#7c4dff; color:#fff; font-size:.75rem; font-weight:700; padding:.15rem .6rem; border-radius:1rem;">Player sprite</span> <span style="display:inline-block; background:#e0524e; color:#fff; font-size:.75rem; font-weight:700; padding:.15rem .6rem; border-radius:1rem;">Enemy sprite</span> <span style="display:inline-block; background:#5f6672; color:#fff; font-size:.75rem; font-weight:700; padding:.15rem .6rem; border-radius:1rem;">Game Over sprite</span> <span style="display:inline-block; background:#c98a15; color:#fff; font-size:.75rem; font-weight:700; padding:.15rem .6rem; border-radius:1rem;">Coin sprite</span>
+
 ## Part 1: Moving to the right
+
+This code goes on your player sprite, the cat that is already on the stage when you open Scratch. You do not need to add a new sprite here.
 
 The `forever` loop keeps checking the key, so the cat keeps moving while you hold it.
 
+<span style="display:inline-block; background:#7c4dff; color:#fff; font-size:.75rem; font-weight:700; padding:.15rem .6rem; border-radius:1rem;">Player sprite</span>
 <pre class="blocks">
 when green flag clicked
 forever
@@ -47,6 +57,7 @@ end
 
 **x** is the left and right position. A negative number moves left, a positive number moves right.
 
+<span style="display:inline-block; background:#7c4dff; color:#fff; font-size:.75rem; font-weight:700; padding:.15rem .6rem; border-radius:1rem;">Player sprite</span>
 <pre class="blocks">
 when green flag clicked
 forever
@@ -67,6 +78,7 @@ end
 
 If **x** is left and right, then **y** is up and down. Same pattern, two more keys.
 
+<span style="display:inline-block; background:#7c4dff; color:#fff; font-size:.75rem; font-weight:700; padding:.15rem .6rem; border-radius:1rem;">Player sprite</span>
 <pre class="blocks">
 when green flag clicked
 forever
@@ -91,10 +103,14 @@ end
 
 ## Part 4: Make clones of the enemy
 
-A clone is a temporary copy of a sprite. This stamps a new enemy every 2 seconds. Build both scripts below on your **enemy** sprite.
+!!! info "Add a new sprite first"
+    Click the **Choose a Sprite** button (the cat with a plus sign, bottom right of the stage) and pick an enemy, like a dragon. All the code in Parts 4, 5, 6, and 8 goes on this new **enemy** sprite.
+
+A clone is a temporary copy of a sprite. This stamps a new enemy every 2 seconds.
 
 The code below creates a clone of your enemy every 2 seconds:
 
+<span style="display:inline-block; background:#e0524e; color:#fff; font-size:.75rem; font-weight:700; padding:.15rem .6rem; border-radius:1rem;">Enemy sprite</span>
 <pre class="blocks">
 when green flag clicked
 forever
@@ -104,6 +120,7 @@ wait (2) seconds
 
 The code below makes every clone teleport to a random position when it is created:
 
+<span style="display:inline-block; background:#e0524e; color:#fff; font-size:.75rem; font-weight:700; padding:.15rem .6rem; border-radius:1rem;">Enemy sprite</span>
 <pre class="blocks">
 when I start as a clone
 show
@@ -119,6 +136,7 @@ go to [random position v]
 
 `point towards` sits inside `forever`, so the enemy re-aims at you every loop. That is what makes it chase.
 
+<span style="display:inline-block; background:#e0524e; color:#fff; font-size:.75rem; font-weight:700; padding:.15rem .6rem; border-radius:1rem;">Enemy sprite</span>
 <pre class="blocks">
 when I start as a clone
 show
@@ -137,6 +155,7 @@ move (4) steps
 
 The `wait` block is the dial for how fast enemies spawn. Turn it down to flood the screen.
 
+<span style="display:inline-block; background:#e0524e; color:#fff; font-size:.75rem; font-weight:700; padding:.15rem .6rem; border-radius:1rem;">Enemy sprite</span>
 <pre class="blocks">
 when green flag clicked
 forever
@@ -151,10 +170,14 @@ wait (0.5) seconds
 
 ## Part 7: Make the score system
 
-Coins use the same clone trick. `score` resets to 0 so a new game starts fresh. Build both scripts on your **coin** sprite.
+!!! info "Add a new sprite first"
+    Click the **Choose a Sprite** button and pick a coin or a ball. All the code in this part goes on the new **coin** sprite.
+
+Coins use the same clone trick. `score` resets to 0 so a new game starts fresh.
 
 The coin spawner:
 
+<span style="display:inline-block; background:#c98a15; color:#fff; font-size:.75rem; font-weight:700; padding:.15rem .6rem; border-radius:1rem;">Coin sprite</span>
 <pre class="blocks">
 when green flag clicked
 set [score v] to (0)
@@ -165,6 +188,7 @@ wait (1) seconds
 
 What each coin does:
 
+<span style="display:inline-block; background:#c98a15; color:#fff; font-size:.75rem; font-weight:700; padding:.15rem .6rem; border-radius:1rem;">Coin sprite</span>
 <pre class="blocks">
 when I start as a clone
 show
@@ -183,10 +207,11 @@ end
 
 ## Part 8: Make a health system
 
-Set **Lives** to 10 at the start, then let each enemy take 5 on contact. This adds one `if` to your chase script.
+Set **Lives** to 10 at the start, then let each enemy take 1 on contact. This adds one `if` to your chase script.
 
 Start your Lives:
 
+<span style="display:inline-block; background:#e0524e; color:#fff; font-size:.75rem; font-weight:700; padding:.15rem .6rem; border-radius:1rem;">Enemy sprite</span>
 <pre class="blocks">
 when green flag clicked
 set [Lives v] to (10)
@@ -194,6 +219,7 @@ set [Lives v] to (10)
 
 The chase, now with a bite:
 
+<span style="display:inline-block; background:#e0524e; color:#fff; font-size:.75rem; font-weight:700; padding:.15rem .6rem; border-radius:1rem;">Enemy sprite</span>
 <pre class="blocks">
 when I start as a clone
 show
@@ -202,20 +228,24 @@ forever
 point towards [Sprite1 v]
 move (4) steps
 if < touching (Sprite1 v)? > then
-change [Lives v] by (-5)
+change [Lives v] by (-1)
 delete this clone
 end
 </pre>
 
 !!! check "Does it work?"
-    Lives drop by 5 each time an enemy reaches you. If Lives never change, make sure you set Lives to 10 at the start.
+    Lives drop by 1 each time an enemy reaches you. If Lives never change, make sure you set Lives to 10 at the start.
 
 ---
 
 ## Part 9: Make a game over screen
 
-Make a sprite with the words **Game Over** on it. It hides all game, then shows the instant Lives run out. `stop all` freezes the whole project.
+!!! info "Add a new sprite first"
+    In the **Choose a Sprite** menu, click **Paint**. Use the **Text** tool (the T) and type **Game Over**. All the code in this part goes on that new sprite.
 
+The sprite hides all game, then shows the instant Lives run out. `stop all` freezes the whole project.
+
+<span style="display:inline-block; background:#5f6672; color:#fff; font-size:.75rem; font-weight:700; padding:.15rem .6rem; border-radius:1rem;">Game Over sprite</span>
 <pre class="blocks">
 when green flag clicked
 hide
