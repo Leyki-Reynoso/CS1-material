@@ -27,11 +27,45 @@ The colored tag above each block tells you which sprite to put that code on. Alw
 
 ![Making a new variable in Scratch](assets/make_variable.png)
 
+## Part 0: Make 4 sprites for you game
+Adding a sprite
+
+A sprite is a character or object in your game, like the cat, an enemy, or a coin. Every new project starts with one sprite (the cat). You add more from the buttons in the bottom right corner of the screen.
+
+Hover over the blue cat button to see your options. The two you will use are Choose a Sprite (pick a ready-made one) and Paint (draw your own).
+
+Option 1: Pick a ready-made sprite
+
+Use this for your enemy and your coin.
+
+Click the Choose a Sprite button (the magnifying glass).
+
+![Making a new variable in Scratch](assets/select_premade_sprite.png)
+
+Browse the library, or search at the top, then click a sprite to add it to your project.
+
+![Making a new variable in Scratch](assets/premade_sprite.png)
+
+Option 2: Paint your own sprite
+
+Use this for the Game Over sign, or any time you want to draw or write something of your own.
+
+Click the Paint button (the paintbrush).
+
+![Making a new variable in Scratch](assets/select_make_sprite.png){ width="400" }
+
+The paint editor opens. Use the Text tool (the T) to type words, or use the brush and shapes to draw. Whatever you make becomes a new sprite.
+
+![Making a new variable in Scratch](assets/make_sprite.png){ width="400" }
+
+You should have four sprites: A game over sprite, an enemy sprite, a player sprite, and a coin sprite. 
+
 ---
 
 !!! note "How do I know where to put the blocks?"
     The colored tag above each block tells you which sprite to put that code on. Always check the tag first. The tags are shown bellow:
     <span style="display:inline-block; background:#7c4dff; color:#fff; font-size:.75rem; font-weight:700; padding:.15rem .6rem; border-radius:1rem;">Player sprite</span> <span style="display:inline-block; background:#e0524e; color:#fff; font-size:.75rem; font-weight:700; padding:.15rem .6rem; border-radius:1rem;">Enemy sprite</span> <span style="display:inline-block; background:#5f6672; color:#fff; font-size:.75rem; font-weight:700; padding:.15rem .6rem; border-radius:1rem;">Game Over sprite</span> <span style="display:inline-block; background:#c98a15; color:#fff; font-size:.75rem; font-weight:700; padding:.15rem .6rem; border-radius:1rem;">Coin sprite</span>
+
 
 ## Part 1: Moving to the right
 
